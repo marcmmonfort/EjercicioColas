@@ -6,7 +6,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Queue<Integer> COLA = new QueueImplemenation<Integer>(5); // Creamos una cola con 5 posiciones.
+        Queue<Integer> cola = new QueueImplemenation<Integer>(5); // Creamos una cola con 5 posiciones.
 
         // --------------------------------------------------------------------------------
 
@@ -25,16 +25,16 @@ public class Main {
 
             // TEST 2: AÑADIR CORRECTAMENTE ELEMENTOS A LA COLA.
 
-            COLA.push(1);
-            System.out.println(COLA.size());
-            COLA.push(2);
-            System.out.println(COLA.size());
-            COLA.push(3);
-            System.out.println(COLA.size());
-            COLA.push(4);
-            System.out.println(COLA.size());
-            COLA.push(5);
-            System.out.println(COLA.size());
+            cola.push(1);
+            System.out.println(cola.size());
+            cola.push(2);
+            System.out.println(cola.size());
+            cola.push(3);
+            System.out.println(cola.size());
+            cola.push(4);
+            System.out.println(cola.size());
+            cola.push(5);
+            System.out.println(cola.size());
 
             // --------------------------------------------------------------------------------
 
@@ -49,12 +49,12 @@ public class Main {
             // TEST 4: QUITAR (POP) UN ELEMENTO DE LA COLA.
 
             int Elemento;
-            Elemento = COLA.pop();
+            Elemento = cola.pop();
             System.out.println("Ha salido de la cola ---> " + Elemento);
 
             // --------------------------------------------------------------------------------
 
-            Class theClass = COLA.getClass();
+            Class theClass = cola.getClass();
             Method[] llistaMetodes = theClass.getDeclaredMethods();
             System.out.println(Arrays.asList(llistaMetodes));
             Field[] llistaAttr = theClass.getDeclaredFields();
